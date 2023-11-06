@@ -1,0 +1,12 @@
+.idea
+__pycache__/
+
+# raw source of open datasets/models
+/data-raw/*
+
+# output
+/output
+
+# notebooks and test
+*.ipynb
+test*
