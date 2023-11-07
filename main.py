@@ -19,7 +19,7 @@ parser.add_argument('--dataset_name', default='steam', type=str)
 parser.add_argument('--pred_threshold', default=3, type=int)
 
 # load model
-parser.add_argument('--is_bert', default=True, type=bool)
+parser.add_argument('--is_bert', default=False, type=bool)
 parser.add_argument('--model_name', default='TE4SRec', type=str)
 parser.add_argument('--load_model', default=False, type=bool)
 
@@ -37,7 +37,7 @@ parser.add_argument('--dropout_rate', default=0.2, type=float)
 parser.add_argument('--mask_ratio', default=0.2, type=float)
 
 # training params
-parser.add_argument('--pretrain_epoch', default=30, type=int)
+parser.add_argument('--pretrain_epoch', default=0, type=int)
 parser.add_argument('--stop_patience', default=10, type=int)
 parser.add_argument('--train_batch_size', default=512, type=int)
 parser.add_argument('--num_worker', default=1, type=int)
